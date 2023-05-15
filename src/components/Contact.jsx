@@ -24,21 +24,21 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.EMAILJS_SERVICE_ID,
-        import.meta.env.EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Julian Rodriguez",
           from_email: "julian.andres.rodriguez@gmail.com",
           message: form.message,
         },
-        import.meta.env.EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           setLoading(false);
           alert(
-            "Gracias por ponerte en contact. Tratare de responder en el menor tiempo posible."
+            "Gracias por ponerte en contacto. Tratare de responder en el menor tiempo posible."
           );
           setForm({ name: "", email: "", message: "" });
         },
