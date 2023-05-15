@@ -6,6 +6,11 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import githubIcon from "./github-icon.svg"
+import linkedin from "./linkedin-icon.svg"
+import codeWars from "./codewars.svg"
+import git from "./git-icon-logo.svg"
+import gmail from "./google-gmail.svg"
 
 import arduino from "./tech/arduino.svg";
 import cpp from "./tech/c-plusplus.svg";
@@ -76,5 +81,10 @@ export {
   barber,
   wallet,
   expenseTracker,
-  classroom
+  classroom,
+  githubIcon, 
+  linkedin,
+  codeWars,
+  git,
+  gmail
 };

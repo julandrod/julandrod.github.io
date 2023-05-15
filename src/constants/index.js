@@ -1,8 +1,10 @@
 import {
+  githubIcon,
+  linkedin,
+  codeWars,
   mobile,
   backend,
   creator,
-  web,
   arduino,
   cpp,
   css,
@@ -31,7 +33,8 @@ import {
   barber,
   wallet,
   expenseTracker,
-  classroom
+  classroom,
+  github
 } from "../assets";
 
 export const navLinks = [
@@ -57,22 +60,21 @@ export const navLinks = [
   },
 ];
 
-const services = [
+const socials = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Github",
+    icon: github,
+    link: "https://github.com/julandrod"
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Linkedin",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/julandrod"
   },
   {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
+    title: "Codewars",
+    icon: codeWars,
+    link: "https://www.codewars.com/users/julandrod"
   },
 ];
 
@@ -405,7 +407,7 @@ const projects = [
 ];
 
 export {
-  services,
+  socials,
   proficientStack,
   begginerStack,
   learningStack,
