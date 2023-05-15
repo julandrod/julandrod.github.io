@@ -24,7 +24,7 @@ const TechContainer = ({ technologies, title }) => {
                 <img
                   src={technology.icon}
                   alt={technology.name}
-                  className="w-10/12"
+                  className="w-10/12 h-full"
                 />
               </div>
               <div className="h-1/5">
