@@ -50,6 +50,8 @@ const Contact = () => {
       );
   };
 
+  console.log(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID)
+
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden justify-center`}
