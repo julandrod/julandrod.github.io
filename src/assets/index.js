@@ -36,6 +36,7 @@ import vite from "./tech/vite.svg";
 import alkemy from "./company/alkemy.jpeg";
 import nocountry from "./company/nocountry.png";
 import madness from "./company/madness.png";
+import freelance from "./company/freelance.png"
 
 import autosUsados from "./projects/autos-usados.png"
 import shoesStore from "./projects/shoes-store.png"
@@ -76,6 +77,7 @@ export {
   alkemy,
   nocountry,
   madness,
+  freelance,
   autosUsados, 
   shoesStore,
   barber,
