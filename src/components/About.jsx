@@ -35,20 +35,38 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduccion</p>
         <h2 className={styles.sectionHeadText}>Un poco sobre mi</h2>
       </motion.div>
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        Especializado en tecnologías como React, Node.js y Express, disfruto
-        aprendiendo rápidamente y aplicando mis habilidades en el desarrollo de
-        aplicaciones web intuitivas y eficientes. Apasionado por la calidad y la
-        innovación, estoy listo para colaborar en proyectos desafiantes y llevar
-        ideas a la realidad.
-      </motion.p>
-      <div className="mt-20 flex justify-start items-start">
+      <div>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          Especializado en tecnologías como React, Node.js y Express, disfruto
+          aprendiendo rápidamente y aplicando mis habilidades en el desarrollo
+          de aplicaciones web intuitivas y eficientes. Apasionado por la calidad
+          y la innovación, estoy listo para colaborar en proyectos desafiantes y
+          llevar ideas a la realidad.
+        </motion.p>
+        <div className="grid grid-cols-1 mt-8">
+          <a
+            href="src/assets/Currículum - Julian Andres Rodriguez.pdf"
+            download
+            className="bg-tertiary rounded-[20px] py-2 px-4 min-h-[50px] w-64 flex justify-evenly items-center flex-col"
+          >
+            Descargar CV - Español
+          </a>
+          <a
+            href="src/assets/Resume - Julian Andres Rodriguez.pdf"
+            download
+            className="bg-tertiary rounded-[20px] py-2 px-4 mt-6 min-h-[50px] w-64 flex justify-evenly items-center flex-col"
+          >
+            Descargar CV - Ingles
+          </a>
+        </div>
+      </div>
+      <div className="mt-10 flex justify-start items-start">
         <p className={styles.sectionSubText}>Puedes encontrarme en:</p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-10 flex flex-wrap gap-10">
         {socials.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
