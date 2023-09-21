@@ -1,10 +1,6 @@
 import {
-  githubIcon,
   linkedin,
   codeWars,
-  mobile,
-  backend,
-  creator,
   arduino,
   cpp,
   css,
@@ -28,13 +24,14 @@ import {
   alkemy,
   nocountry,
   madness,
+  freelance,
   autosUsados,
   shoesStore,
   barber,
   wallet,
   expenseTracker,
   classroom,
-  github
+  github,
 } from "../assets";
 
 export const navLinks = [
@@ -64,17 +61,17 @@ const socials = [
   {
     title: "Github",
     icon: github,
-    link: "https://github.com/julandrod"
+    link: "https://github.com/julandrod",
   },
   {
     title: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/julandrod"
+    link: "https://www.linkedin.com/in/julandrod",
   },
   {
     title: "Codewars",
     icon: codeWars,
-    link: "https://www.codewars.com/users/julandrod"
+    link: "https://www.codewars.com/users/julandrod",
   },
 ];
 
@@ -169,13 +166,25 @@ const learningStack = [
 
 const experiences = [
   {
+    title: "Full Stack Developer",
+    company_name: "Freelance",
+    icon: freelance,
+    iconBg: "#E6DEDD",
+    date: "Abril 2022 - Actualidad",
+    points: [
+      "Desarrollador Backend realizando Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL.",
+    ],
+  },
+  {
     title: "Backend Developer",
     company_name: "No Country",
     icon: nocountry,
     iconBg: "#E6DEDD",
     date: "Febrero 2023 - Mayo 2023",
     points: [
-      "Desarrollador Backend realizando Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL.",
+      "Desarrollo de aplicaciones web full stack usando tecnologías como React, Tailwind, Nodejs y Express.",
+      "Configuración y puesta en marcha de sitios con Wordpress.",
+      "Creación de sitios web y landing page usando tecnologías como Vite y Astro Js.",
     ],
   },
   {
@@ -365,7 +374,8 @@ const projects = [
       },
     ],
     image: expenseTracker,
-    source_code_link: "https://github.com/julandrod/Expense-Tracker-Alkemy-Challenge",
+    source_code_link:
+      "https://github.com/julandrod/Expense-Tracker-Alkemy-Challenge",
   },
   {
     name: "ClassRoom",
