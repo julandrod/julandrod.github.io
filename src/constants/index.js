@@ -175,7 +175,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Febrero 2023 - Mayo 2023",
     points: [
-      "Desarrollador de Backend Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL.",
+      "Desarrollador Backend realizando Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL.",
     ],
   },
   {
