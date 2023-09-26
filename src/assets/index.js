@@ -11,6 +11,8 @@ import linkedin from "./linkedin-icon.svg"
 import codeWars from "./codewars.svg"
 import git from "./git-icon-logo.svg"
 import gmail from "./google-gmail.svg"
+import linkWww from "./link-www.png"
+import www from "./www-icon.png"
 
 import arduino from "./tech/arduino.svg";
 import cpp from "./tech/c-plusplus.svg";
@@ -44,6 +46,8 @@ import barber from "./projects/the-boss-barber.png"
 import wallet from "./projects/virtual-wallet.png"
 import expenseTracker from "./projects/expense-tracker.png"
 import classroom from "./projects/classroom.png"
+import lilaStore from "./projects/lila-store.png"
+import saludarte from "./projects/saludarte.png"
 
 export {
   logo,
@@ -88,5 +92,9 @@ export {
   linkedin,
   codeWars,
   git,
-  gmail
+  gmail,
+  linkWww,
+  www,
+  lilaStore,
+  saludarte
 };
