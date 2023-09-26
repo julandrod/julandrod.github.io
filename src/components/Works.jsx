@@ -1,10 +1,7 @@
-import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
-import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { github } from "../assets";
+import { github, www } from "../assets";
 
 const ProjectCard = ({
   index,
@@ -13,6 +10,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  project_link
 }) => {
   return (
     <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
@@ -24,11 +22,11 @@ const ProjectCard = ({
         />
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
-            onClick={() => window.open(source_code_link, "_blank")}
+            onClick={() => window.open(source_code_link ? source_code_link : project_link, "_blank")}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
-              src={github}
+              src={source_code_link ? github : www}
               alt="source code"
               className="w-11/12 h-11/12 object-contain"
             />
