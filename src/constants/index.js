@@ -32,6 +32,8 @@ import {
   expenseTracker,
   classroom,
   github,
+  lilaStore,
+  saludarte,
 } from "../assets";
 
 export const navLinks = [
@@ -216,9 +218,47 @@ const experiences = [
 
 const projects = [
   {
+    name: "Saludarte",
+    description:
+      "Sitio web de salud para la empresa Saludarte, construida usando Astro Js, Tailwind y Bun como runtime.",
+    tags: [
+      {
+        name: "astrojs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "bun",
+        color: "",
+      }
+    ],
+    image: saludarte,
+    project_link: "",
+  },
+  {
+    name: "Lila Store",
+    description:
+      "E-commerce especializado en la venta de productos de belleza. Desarrollado usando Wordpress y Woocommerce.",
+    tags: [
+      {
+        name: "Wordpress",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Woocommerce",
+        color: "green-text-gradient",
+      },
+    ],
+    image: lilaStore,
+    project_link: "https://www.lilastore.com.co/",
+  },
+  {
     name: "Shoes Store",
     description:
-      "Plataforma Full Stack de un ecommerce especializado en zapatos deportivos que permite al cliente comprar y hacer sus pedidos directamente desde la pagina, cuenta ademas con Dashboard para el administrador.",
+      "Plataforma Full Stack de un e-commerce especializado en zapatos deportivos que permite al cliente comprar y hacer sus pedidos directamente desde la pagina, cuenta ademas con Dashboard para el administrador.",
     tags: [
       {
         name: "nodejs",
