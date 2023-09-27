@@ -179,7 +179,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Abril 2022 - Actualidad",
     points: [
-      "Desarrollador Backend realizando Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL.",
+      "Desarrollo de aplicaciones web full stack usando tecnologías como React, Tailwind, Nodejs, Express y bases de datos como PostgreSQL, MySQL y MongoDB.",
+      "Creación de sitios web y landing page usando tecnologías como Vite y Astro Js.",
+      "Configuración y puesta en marcha de sitios con Wordpress.",
     ],
   },
   {
@@ -189,9 +191,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Febrero 2023 - Mayo 2023",
     points: [
-      "Desarrollo de aplicaciones web full stack usando tecnologías como React, Tailwind, Nodejs y Express.",
-      "Configuración y puesta en marcha de sitios con Wordpress.",
-      "Creación de sitios web y landing page usando tecnologías como Vite y Astro Js.",
+      "Desarrollador Backend realizando Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL."
     ],
   },
   {
