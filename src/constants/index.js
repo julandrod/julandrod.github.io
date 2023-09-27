@@ -34,6 +34,7 @@ import {
   github,
   lilaStore,
   saludarte,
+  astro,
 } from "../assets";
 
 export const navLinks = [
@@ -101,6 +102,10 @@ const proficientStack = [
   {
     name: "Tailwind",
     icon: tailwind,
+  },
+  {
+    name: "Astro",
+    icon: astro,
   },
   {
     name: "React",
