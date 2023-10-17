@@ -35,6 +35,8 @@ import {
   lilaStore,
   saludarte,
   astro,
+  flutter,
+  dart,
 } from "../assets";
 
 export const navLinks = [
@@ -169,6 +171,14 @@ const learningStack = [
     name: "Python",
     icon: python,
   },
+  {
+    name: "Flutter",
+    icon: flutter,
+  },
+  {
+    name: "Dart",
+    icon: dart,
+  },  
 ];
 
 const experiences = [

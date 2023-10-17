@@ -34,7 +34,9 @@ import sequelize from "./tech/sequelize.svg";
 import tailwind from "./tech/tailwindcss-icon.svg";
 import typescript from "./tech/typescript-icon.svg";
 import vite from "./tech/vite.svg";
-import astro from "./tech/astro.png"
+import astro from "./tech/astro.png";
+import flutter from "./tech/flutter.svg";
+import dart from "./tech/dart.svg";
 
 import alkemy from "./company/alkemy.jpeg";
 import nocountry from "./company/nocountry.png";
@@ -98,5 +100,7 @@ export {
   www,
   lilaStore,
   saludarte,
-  astro
+  astro,
+  flutter, 
+  dart
 };
