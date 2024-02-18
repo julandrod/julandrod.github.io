@@ -6,13 +6,13 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import githubIcon from "./github-icon.svg"
-import linkedin from "./linkedin-icon.svg"
-import codeWars from "./codewars.svg"
-import git from "./git-icon-logo.svg"
-import gmail from "./google-gmail.svg"
-import linkWww from "./link-www.png"
-import www from "./www-icon.png"
+import githubIcon from "./github-icon.svg";
+import linkedin from "./linkedin-icon.svg";
+import codeWars from "./codewars.svg";
+import git from "./git-icon-logo.svg";
+import gmail from "./google-gmail.svg";
+import linkWww from "./link-www.png";
+import www from "./www-icon.png";
 
 import arduino from "./tech/arduino.svg";
 import cpp from "./tech/c-plusplus.svg";
@@ -25,6 +25,8 @@ import kotlin from "./tech/kotlin.svg";
 import mongo from "./tech/mongodb-icon.svg";
 import mysql from "./tech/mysql.svg";
 import nodejs from "./tech/nodejs-icon.svg";
+import nextjs from "./tech/nextjs.svg";
+import nextjs2 from "./tech/nextjs2.png";
 import postgres from "./tech/postgresql.svg";
 import python from "./tech/python.svg";
 import raspberry from "./tech/raspberry-pi.svg";
@@ -41,17 +43,17 @@ import dart from "./tech/dart.svg";
 import alkemy from "./company/alkemy.jpeg";
 import nocountry from "./company/nocountry.png";
 import madness from "./company/madness.png";
-import freelance from "./company/freelance.png"
-import whynot from "./company/whynot.jpeg"
+import freelance from "./company/freelance.png";
+import whynot from "./company/whynot.jpeg";
 
-import autosUsados from "./projects/autos-usados.png"
-import shoesStore from "./projects/shoes-store.png"
-import barber from "./projects/the-boss-barber.png"
-import wallet from "./projects/virtual-wallet.png"
-import expenseTracker from "./projects/expense-tracker.png"
-import classroom from "./projects/classroom.png"
-import lilaStore from "./projects/lila-store.png"
-import saludarte from "./projects/saludarte.png"
+import autosUsados from "./projects/autos-usados.png";
+import shoesStore from "./projects/shoes-store.png";
+import barber from "./projects/the-boss-barber.png";
+import wallet from "./projects/virtual-wallet.png";
+import expenseTracker from "./projects/expense-tracker.png";
+import classroom from "./projects/classroom.png";
+import lilaStore from "./projects/lila-store.png";
+import saludarte from "./projects/saludarte.png";
 
 export {
   logo,
@@ -81,19 +83,19 @@ export {
   sequelize,
   tailwind,
   typescript,
-  vite,  
+  vite,
   alkemy,
   nocountry,
   madness,
   freelance,
   whynot,
-  autosUsados, 
+  autosUsados,
   shoesStore,
   barber,
   wallet,
   expenseTracker,
   classroom,
-  githubIcon, 
+  githubIcon,
   linkedin,
   codeWars,
   git,
@@ -103,6 +105,8 @@ export {
   lilaStore,
   saludarte,
   astro,
-  flutter, 
-  dart
+  flutter,
+  dart,
+  nextjs,
+  nextjs2
 };

@@ -38,6 +38,8 @@ import {
   flutter,
   dart,
   whynot,
+  nextjs,
+  nextjs2,
 } from "../assets";
 
 export const navLinks = [
@@ -117,6 +119,10 @@ const proficientStack = [
   {
     name: "Vite",
     icon: vite,
+  },
+  {
+    name: "Next.js",
+    icon: nextjs2,
   },
   {
     name: "Redux",
