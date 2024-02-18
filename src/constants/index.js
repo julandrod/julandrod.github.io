@@ -37,6 +37,7 @@ import {
   astro,
   flutter,
   dart,
+  whynot,
 } from "../assets";
 
 export const navLinks = [
@@ -178,10 +179,46 @@ const learningStack = [
   {
     name: "Dart",
     icon: dart,
-  },  
+  },
 ];
 
 const experiences = [
+  {
+    title: "Full Stack Developer",
+    company_name: "Whynot? mih",
+    icon: whynot,
+    iconBg: "#E6DEDD",
+    date: "Diciembre 2023 - Febrero 2024",
+    points: [
+      "Desarrollador Full Stack de aplicaciones web utilizando tecnologías como NextJs, Tailwind,  Nodejs, Express y Prisma.",
+    ],
+    tags: [
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "",
+      },
+      {
+        name: "prisma",
+        color: "text-red-900",
+      },
+      {
+        name: "postgresql",
+        color: "",
+      },
+    ],
+  },
   {
     title: "Full Stack Developer",
     company_name: "Freelance",
@@ -193,6 +230,44 @@ const experiences = [
       "Creación de sitios web y landing page usando tecnologías como Vite y Astro Js.",
       "Configuración y puesta en marcha de sitios con Wordpress.",
     ],
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "",
+      },
+      {
+        name: "prisma",
+        color: "text-red-900",
+      },
+      {
+        name: "sequelize",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongo",
+        color: "",
+      },
+      {
+        name: "postgresql",
+        color: "text-red-900",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+    ],
   },
   {
     title: "Backend Developer",
@@ -201,7 +276,25 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Febrero 2023 - Mayo 2023",
     points: [
-      "Desarrollador Backend realizando Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL."
+      "Desarrollador Backend realizando Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL.",
+    ],
+    tags: [
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "",
+      },
+      {
+        name: "sequelize",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "text-yellow-900",
+      },
     ],
   },
   {
@@ -213,6 +306,32 @@ const experiences = [
     points: [
       "Skill Up de Fullstack JS junto con el Skill Up de Metodologías de trabajo y de Soft Skills en Alkemy.",
       "Desarrollo de una billetera virtual usando tecnologias como Javascript, NodeJs, Express, MySql, Vite",
+    ],
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "",
+      },
+      {
+        name: "sequelize",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "",
+      },
     ],
   },
 
@@ -227,6 +346,20 @@ const experiences = [
       "Diseñar, administrar y mantener el sitio web, utilizando WordPress y WooCommerce.",
       "Creación de proyectos basados en Arduino y Raspberry Pi.",
       "Elaboración de artículos y tutoriales sobre tecnología, electrónica y sistemas embebidos.",
+    ],
+    tags: [
+      {
+        name: "wordpress",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "arduino",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "raspberrypi",
+        color: "",
+      },
     ],
   },
 ];
@@ -248,7 +381,7 @@ const projects = [
       {
         name: "bun",
         color: "",
-      }
+      },
     ],
     image: saludarte,
     project_link: "",

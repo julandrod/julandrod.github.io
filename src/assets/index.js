@@ -42,6 +42,7 @@ import alkemy from "./company/alkemy.jpeg";
 import nocountry from "./company/nocountry.png";
 import madness from "./company/madness.png";
 import freelance from "./company/freelance.png"
+import whynot from "./company/whynot.jpeg"
 
 import autosUsados from "./projects/autos-usados.png"
 import shoesStore from "./projects/shoes-store.png"
@@ -85,6 +86,7 @@ export {
   nocountry,
   madness,
   freelance,
+  whynot,
   autosUsados, 
   shoesStore,
   barber,

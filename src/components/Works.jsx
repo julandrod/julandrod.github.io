@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
