@@ -39,6 +39,7 @@ import vite from "./tech/vite.svg";
 import astro from "./tech/astro.png";
 import flutter from "./tech/flutter.svg";
 import dart from "./tech/dart.svg";
+import prisma from "./tech/prisma.png";
 
 import alkemy from "./company/alkemy.jpeg";
 import nocountry from "./company/nocountry.png";
@@ -108,5 +109,6 @@ export {
   flutter,
   dart,
   nextjs,
-  nextjs2
+  nextjs2,
+  prisma,
 };

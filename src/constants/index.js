@@ -38,8 +38,8 @@ import {
   flutter,
   dart,
   whynot,
-  nextjs,
   nextjs2,
+  prisma,
 } from "../assets";
 
 export const navLinks = [
@@ -127,6 +127,10 @@ const proficientStack = [
   {
     name: "Redux",
     icon: redux,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
   },
   {
     name: "Sequelize",
