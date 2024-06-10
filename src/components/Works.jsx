@@ -11,10 +11,10 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  project_link
+  project_link,
 }) => {
   return (
-    <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+    <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[520px]">
       <div className="relative w-full h-[230px]">
         <img
           src={image}
@@ -22,16 +22,30 @@ const ProjectCard = ({
           className="w-full h-full object-cover rounded-2xl"
         />
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-          <div
-            onClick={() => window.open(source_code_link ? source_code_link : project_link, "_blank")}
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-          >
-            <img
-              src={source_code_link ? github : www}
-              alt="source code"
-              className="w-11/12 h-11/12 object-contain"
-            />
-          </div>
+          {source_code_link && (
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={github}
+                alt="source code"
+                className="w-11/12 h-11/12 object-contain"
+              />
+            </div>
+          )}
+          {project_link && (
+            <div
+              onClick={() => window.open(project_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={www}
+                alt="source code"
+                className="w-11/12 h-11/12 object-contain"
+              />
+            </div>
+          )}
         </div>
       </div>
       <div className="mt-5 h-[35%]">
@@ -57,9 +71,7 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Proyectos</h2>
       </div>
       <div className="w-full flex">
-        <div
-          className="text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+        <div className="text-secondary text-[17px] max-w-3xl leading-[30px]">
           <p className="mt-3 mb-4">
             Estos son algunos de los proyectos que he realizado y que demuestran
             mis habilidades y conocimientos. Cada proyecto tiene una pequeña
