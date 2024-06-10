@@ -40,6 +40,7 @@ import {
   whynot,
   nextjs2,
   prisma,
+  chatbotGemini,
 } from "../assets";
 
 export const navLinks = [
@@ -376,6 +377,44 @@ const experiences = [
 
 const projects = [
   {
+    name: "Chatbot - Gemini",
+    description:
+      "Este chatbot utiliza la API de Gemini la inteligencia artificial de Google. Los usuarios pueden crear una cuenta, ingresar al chat e interactuar con este.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "",
+      },
+      {
+        name: "mongoose",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "gemini",
+        color: "",
+      },
+    ],
+    image: chatbotGemini,
+    project_link: "https://gemini-chatbot-silk.vercel.app/",
+    source_code_link: "https://github.com/julandrod/Gemini-Chatbot",
+  },
+  {
     name: "Saludarte",
     description:
       "Sitio web de salud para la empresa Saludarte, construida usando Astro Js, Tailwind y Bun como runtime.",
@@ -394,7 +433,7 @@ const projects = [
       },
     ],
     image: saludarte,
-    project_link: "",
+    project_link: "https://salud-arte.com.co/",
   },
   {
     name: "Lila Store",
