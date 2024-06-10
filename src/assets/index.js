@@ -55,6 +55,7 @@ import expenseTracker from "./projects/expense-tracker.png";
 import classroom from "./projects/classroom.png";
 import lilaStore from "./projects/lila-store.png";
 import saludarte from "./projects/saludarte.png";
+import chatbotGemini from "./projects/chatbot.png"
 
 export {
   logo,
@@ -105,6 +106,7 @@ export {
   www,
   lilaStore,
   saludarte,
+  chatbotGemini,
   astro,
   flutter,
   dart,
