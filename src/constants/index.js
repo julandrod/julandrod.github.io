@@ -41,6 +41,7 @@ import {
   nextjs2,
   prisma,
   chatbotGemini,
+  iPhoneLanding,
 } from "../assets";
 
 export const navLinks = [
@@ -376,6 +377,28 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "IPhone Landing Page - Clon",
+    description:
+      "Clon de la landing page de iPhone utilizando Vite como framework, GSAP para animaciones modernas y fluidas y por último Tailwind para agregar estilos.",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: iPhoneLanding,
+    project_link: "https://i-phone-landing-clone-blush.vercel.app/",
+    source_code_link: "https://github.com/julandrod/iPhone-landing-clone",
+  },
   {
     name: "Chatbot - Gemini",
     description:

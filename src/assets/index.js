@@ -47,6 +47,7 @@ import madness from "./company/madness.png";
 import freelance from "./company/freelance.png";
 import whynot from "./company/whynot.jpeg";
 
+// Projects 
 import autosUsados from "./projects/autos-usados.png";
 import shoesStore from "./projects/shoes-store.png";
 import barber from "./projects/the-boss-barber.png";
@@ -56,6 +57,7 @@ import classroom from "./projects/classroom.png";
 import lilaStore from "./projects/lila-store.png";
 import saludarte from "./projects/saludarte.png";
 import chatbotGemini from "./projects/chatbot.png"
+import iPhoneLanding from "./projects/iPhone-landing.png"
 
 export {
   logo,
@@ -107,6 +109,7 @@ export {
   lilaStore,
   saludarte,
   chatbotGemini,
+  iPhoneLanding,
   astro,
   flutter,
   dart,
