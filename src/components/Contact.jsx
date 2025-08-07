@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { styles } from "../styles";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const formRef = useRef();
@@ -13,6 +14,7 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const {t} = useTranslation()
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -59,43 +61,43 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Contactame</p>
-        <h3 className={styles.sectionHeadText}>Contacto</h3>
+        <p className={styles.sectionSubText}>{t("contact.section")}</p>
+        <h3 className={styles.sectionHeadText}>{t("contact.title")}</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Tu nombre</span>
+            <span className="text-white font-medium mb-4">{t("contact.nameLabel")}</span>
             <input
               type="text"
               name="name"
               value={form.value}
               onChange={handleChange}
-              placeholder="¿Cual es tu nombre?"
+              placeholder={t("contact.namePlaceholder")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Tu email</span>
+            <span className="text-white font-medium mb-4">{t("contact.emailLabel")}</span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="¿Cual es tu correo electronico?"
+              placeholder={t("contact.emailPlaceholder")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium "
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Tu mensaje</span>
+            <span className="text-white font-medium mb-4">{t("contact.messageLabel")}</span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="¿Que te gustaria decirme?"
+              placeholder={t("contact.messagePlaceholder")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium "
             />
           </label>
@@ -103,7 +105,7 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
           >
-            {loading ? "Enviando..." : "Enviar"}
+            {loading ? t("contact.sending") : t("contact.sendButton")}
           </button>
         </form>
       </motion.div>

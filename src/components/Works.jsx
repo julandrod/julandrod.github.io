@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { github, www } from "../assets";
+import { useTranslation } from "react-i18next";
 
 const ProjectCard = ({
   index,
@@ -13,6 +14,8 @@ const ProjectCard = ({
   source_code_link,
   project_link,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[520px]">
       <div className="relative w-full h-[230px]">
@@ -50,7 +53,7 @@ const ProjectCard = ({
       </div>
       <div className="mt-5 h-[35%]">
         <h3 className="text-white font-bold text-[24px]">{name}</h3>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <p className="mt-2 text-secondary text-[14px]">{t(description)}</p>
       </div>
       <div className="mt-4 flex flex-wrap gap-2 h-[11%]">
         {tags.map((tag) => (
@@ -64,29 +67,28 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div>
-        <p className={`${styles.sectionSubText}`}>Algo de mi trabajo</p>
-        <h2 className={`${styles.sectionHeadText}`}>Proyectos</h2>
+        <p className={`${styles.sectionSubText}`}>{t("projects.title")}</p>
+        <h2 className={`${styles.sectionHeadText}`}>
+          {t("projects.subtitle")}
+        </h2>
       </div>
       <div className="w-full flex">
         <div className="text-secondary text-[17px] max-w-3xl leading-[30px]">
-          <p className="mt-3 mb-4">
-            Estos son algunos de los proyectos que he realizado y que demuestran
-            mis habilidades y conocimientos. Cada proyecto tiene una pequeña
-            descripcion y algunas etiquetas con las tecnologias usadas en cada
-            uno, tambien links a sus correspondientes repositorios y demos.
-          </p>
+          <p className="mt-3 mb-4">{t("projects.description")}</p>
           <span>
-            Si quieres ver mas de mi codigo puedes pasar por mi cuenta de{" "}
+           {t("projects.more")}
             <span className="text-[#915EFF] hover:text-[#4f348a]">
               <a
                 href="https://github.com/julandrod"
                 target="_blank"
                 rel="noreferrer"
               >
-                Github 🔗.
+                Github 🔗
               </a>
             </span>
             .

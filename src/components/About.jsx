@@ -4,12 +4,13 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { socials } from "../constants";
 import { SectionWrapper } from "../hoc";
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ index, title, icon, link }) => (
   <div className="xs:w-[100px] w-full hover:scale-110">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      className="w-full green-pink-gradient p-px rounded-[20px] shadow-card"
     >
       <a href={link} target="_blank" rel="noreferrer">
         <div
@@ -29,22 +30,22 @@ const ServiceCard = ({ index, title, icon, link }) => (
 );
 
 const About = () => {
+  const {t} = useTranslation()
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduccion</p>
-        <h2 className={styles.sectionHeadText}>Un poco sobre mi</h2>
+         <p className={`${styles.sectionSubText}`}>
+          {t("aboutMe.subTitle")}
+        </p>
+        <h2 className={styles.sectionHeadText}>{t("aboutMe.mainTitle")}</h2>
       </motion.div>
       <div>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] whitespace-pre-line"
         >
-          Especializado en tecnologías como React, Node.js y Express, disfruto
-          aprendiendo rápidamente y aplicando mis habilidades en el desarrollo
-          de aplicaciones web intuitivas y eficientes. Apasionado por la calidad
-          y la innovación, estoy listo para colaborar en proyectos desafiantes y
-          llevar ideas a la realidad.
+          {t("aboutMe.description")}
         </motion.p>
         <div className="grid grid-cols-1 mt-8">
           <a
@@ -52,19 +53,12 @@ const About = () => {
             download
             className="bg-tertiary rounded-[20px] py-2 px-4 min-h-[50px] w-64 flex justify-evenly items-center flex-col"
           >
-            Descargar CV - Español
-          </a>
-          <a
-            href="src/assets/Resume - Julian Andres Rodriguez.pdf"
-            download
-            className="bg-tertiary rounded-[20px] py-2 px-4 mt-6 min-h-[50px] w-64 flex justify-evenly items-center flex-col"
-          >
-            Descargar CV - Ingles
+            {t("aboutMe.downloadCV")}
           </a>
         </div>
       </div>
       <div className="mt-10 flex justify-start items-start">
-        <p className={styles.sectionSubText}>Puedes encontrarme en:</p>
+        <p className={styles.sectionSubText}>{t("aboutMe.findMe")}</p>
       </div>
       <div className="mt-10 flex flex-wrap gap-10">
         {socials.map((service, index) => (

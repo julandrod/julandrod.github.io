@@ -46,6 +46,7 @@ import nocountry from "./company/nocountry.png";
 import madness from "./company/madness.png";
 import freelance from "./company/freelance.png";
 import whynot from "./company/whynot.jpeg";
+import cargologik from "./company/cargologik.png"
 
 // Projects 
 import autosUsados from "./projects/autos-usados.png";
@@ -116,4 +117,5 @@ export {
   nextjs,
   nextjs2,
   prisma,
+  cargologik
 };

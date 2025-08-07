@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { begginerStack, learningStack, proficientStack } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
@@ -39,25 +40,25 @@ const TechContainer = ({ technologies, title }) => {
 };
 
 const Tech = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>
-          Lenguajes, frameworks y tecnologias
-        </p>
-        <h2 className={`${styles.sectionHeadText}`}>Tech Stack</h2>
+        <p className={`${styles.sectionSubText}`}>{t("tech.title")}</p>
+        <h2 className={`${styles.sectionHeadText}`}>{t("tech.subtitle")}</h2>
       </motion.div>
       <TechContainer
         technologies={proficientStack}
-        title="Tecnologias que uso frecuentemente:"
+        title={t("tech.frequently")}
       />
       <TechContainer
         technologies={begginerStack}
-        title="Tecnologias que conozco pero uso poco:"
+        title={t("tech.rarelyUsed")}
       />
       <TechContainer
         technologies={learningStack}
-        title="Tecnologias que estoy aprendiendo:"
+        title={t("tech.learning")}
       />
     </>
   );

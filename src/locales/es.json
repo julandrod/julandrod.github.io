@@ -1,0 +1,104 @@
+{
+  "navlinks": {
+    "about": "Sobre Mi",
+    "work": "Experiencia",
+    "stack": "Tecnologias",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "mainTitle": "Hola, soy",
+    "description": "Desarrollador Full Stack de Colombia"
+  },
+  "aboutMe": {
+    "mainTitle": "Un poco sobre mi",
+    "subTitle": "introduccion",
+    "description": "Soy un desarrollador Full Stack especializado en tecnologías como React, Node.js y Express.\n\n Me apasiona aprender rápido, adaptarme a nuevos retos y construir aplicaciones web que sean intuitivas, eficientes y de alta calidad.\n\n Disfruto colaborar en proyectos innovadores y transformar ideas en soluciones reales.",
+    "downloadCV": "Descargar CV",
+    "findMe": "Puedes encontrarme en:"
+  },
+  "experience": {
+    "mainTitle": "En que he trabajado hasta el momento",
+    "subTitle": "Experiencia laboral",
+    "cargologik": {
+      "position": "Desarrollador Backend",
+      "description": "En Cargologik, me desempeñé como desarrollador backend, diseñando e implementando sistemas escalables y seguros con Node.js, MongoDB y Google Cloud.\n\nColaboré estrechamente con los equipos de producto y frontend para desarrollar APIs REST y funciones en la nube que optimizaron los procesos logísticos.\n\nTambién estuve a cargo de revisar código, proponer mejoras técnicas, resolver incidencias en producción y mantener buenas prácticas de seguridad y rendimiento.\n\nParticipé activamente en la evolución de la arquitectura, buscando siempre soluciones eficientes y sostenibles."
+    },
+    "freelance": {
+      "position": "Desarrollador Fullstack",
+      "description": "He trabajado como desarrollador freelance construyendo soluciones web a medida para diferentes clientes, combinando tecnologías modernas con un enfoque funcional y visual.\n\nResponsabilidades y logros:\n• Desarrollo de aplicaciones web completas utilizando React, Node.js, Express y Tailwind CSS.\n• Creación de sitios web y landing pages usando frameworks como Vite y Astro JS.\n• Configuración y despliegue de sitios en WordPress.\n• Integración de bases de datos como MongoDB, MySQL y PostgreSQL.\n• Participación en proyectos personalizados con hardware (Arduino, Raspberry Pi).\n• Gestión de proyectos desde el diseño hasta el despliegue final."
+    },
+    "whynot": {
+      "position": "Desarrollador Fullstack",
+      "description": "Participé en el desarrollo completo de aplicaciones web utilizando tecnologías modernas y un enfoque centrado en la experiencia del usuario. Trabajé de forma remota con un equipo internacional, contribuyendo tanto en el frontend como en el backend de los proyectos.\n\nResponsabilidades y logros:\n• Implementación de interfaces modernas y responsivas con Next.js y Tailwind CSS.\n• Desarrollo de APIs REST con Node.js y Express.\n• Gestión de datos utilizando Prisma como ORM.\n• Mantenimiento del flujo completo de datos entre cliente y servidor.\n• Colaboración activa en ciclos ágiles de desarrollo."
+    },
+    "noCountry": {
+      "position": "Desarrollador Backend",
+      "description": "Participé como desarrollador backend en un entorno de trabajo colaborativo remoto, contribuyendo a múltiples proyectos mediante la creación y documentación de APIs. El rol se enfocó en el uso de tecnologías modernas y metodologías ágiles como Scrum.\n\nResponsabilidades y logros:\n• Desarrollo y mantenimiento de APIs REST con Node.js y Express.js.\n• Modelado de bases de datos relacionales con PostgreSQL y Sequelize.\n• Uso de MongoDB para estructuras de datos no relacionales.\n• Gestión de versiones y colaboración en Git y GitHub.\n• Trabajo ágil bajo metodología Scrum, con entregas iterativas y reuniones de equipo."
+    },
+    "alkemy": {
+      "position": "Desarrollador Fullstack",
+      "description": "Participé en un proyecto intensivo de desarrollo full stack, creando una billetera virtual utilizando tecnologías modernas como JavaScript, Node.js, Express, MySQL, Vite y React. El programa incluyó entrenamiento técnico, metodologías ágiles (Scrum) y desarrollo de habilidades blandas.\n\nResponsabilidades y logros:\n• Desarrollo de funcionalidades backend con Node.js, Express y Sequelize.\n• Construcción del frontend con React, Redux y Tailwind CSS.\n• Integración de base de datos relacional con MySQL.\n• Práctica de metodologías ágiles en un entorno colaborativo remoto.\n• Mejora de habilidades de comunicación y trabajo en equipo."
+    },
+    "madness": {
+      "position": "Fundador y Desarrollador Tecnológico",
+      "description": "Fundé Madness Electronics, una tienda en línea especializada en componentes electrónicos y proyectos DIY. Me encargué del diseño, desarrollo y mantenimiento del sitio web utilizando WordPress y WooCommerce, además de crear proyectos educativos y funcionales con Arduino y Raspberry Pi. También produje contenido técnico, incluyendo tutoriales y artículos sobre electrónica, programación y sistemas embebidos.\n\nResponsabilidades y logros clave:\n• Diseñé, lancé y administré una plataforma e-commerce completa desde cero.\n• Desarrollé e implementé proyectos DIY e IoT con microcontroladores y placas de desarrollo.\n• Creé contenido educativo técnico, incluyendo tutoriales y guías paso a paso.\n• Combiné desarrollo web, prototipado de hardware y creación de contenido para hacer crecer una marca enfocada en tecnología."
+    }
+  },
+  "tech": {
+    "title": "Lenguajes, frameworks y tecnologías",
+    "subtitle": "Tech Stack",
+    "frequently": "Tecnologías que uso frecuentemente:",
+    "rarelyUsed": "Tecnologías que conozco pero uso poco:",
+    "learning": "Tecnologías que estoy aprendiendo:"
+  },
+  "projects": {
+    "title": "Algo de mi trabajo",
+    "subtitle": "Proyectos",
+    "description": "Estos son algunos de los proyectos que he realizado y que demuestran mis habilidades y conocimientos. Cada proyecto tiene una pequeña descripción y algunas etiquetas con las tecnologías usadas en cada uno, también links a sus correspondientes repositorios y demos.",
+    "more": "Si quieres ver más de mi código puedes pasar por mi cuenta de ",
+    "iphone": {
+      "description": "Clon de la landing page del iPhone, desarrollado con Vite como framework, GSAP para animaciones modernas y fluidas, y Tailwind CSS para los estilos."
+    },
+    "chatbot": {
+      "description": "Este chatbot utiliza la API de Gemini, la inteligencia artificial de Google. Los usuarios pueden crear una cuenta, ingresar al chat e interactuar con él."
+    },
+    "saludarte": {
+      "description": "Sitio web de salud para la empresa Saludarte, construido con Astro.js, Tailwind CSS y Bun como entorno de ejecución."
+    },
+    "lilaStore": {
+      "description": "E-commerce especializado en la venta de productos de belleza. Desarrollado con WordPress y WooCommerce."
+    },
+    "shoesStore": {
+      "description": "Plataforma Full Stack de un e-commerce especializado en zapatos deportivos, que permite a los clientes realizar compras y pedidos directamente desde la página. Además, cuenta con un Dashboard para el administrador."
+    },
+    "autosUsados": {
+      "description": "Marketplace Full Stack que permite comprar y vender autos usados, con sistema de mensajería interna entre usuarios."
+    },
+    "wallet": {
+      "description": "Billetera virtual desarrollada junto a un equipo de desarrolladores Full Stack como parte del proceso de emulación y mejora de habilidades en Alkemy."
+    },
+    "barber": {
+      "description": "Plataforma para la gestión integral de una barbería. Permite a los clientes elegir un barbero, agendar turnos y seleccionar servicios. El administrador puede gestionar servicios, precios y pagos a los barberos."
+    },
+    "expenseTracker": {
+      "description": "Aplicación para gestionar finanzas personales. El usuario puede visualizar estadísticas y obtener un resumen claro de sus ingresos y gastos."
+    },
+    "classRoom": {
+      "description": "Aplicación para crear aulas virtuales donde los estudiantes pueden ver clases grabadas e interactuar con profesores y compañeros a través de un chat en tiempo real."
+    }
+  },
+  "contact": {
+    "section": "Contactame",
+    "title": "Contacto",
+    "nameLabel": "Tu nombre",
+    "namePlaceholder": "¿Cuál es tu nombre?",
+    "emailLabel": "Tu email",
+    "emailPlaceholder": "¿Cuál es tu correo electrónico?",
+    "messageLabel": "Tu mensaje",
+    "messagePlaceholder": "¿Qué te gustaría decirme?",
+    "sendButton": "Enviar",
+    "sending": "Enviando..."
+  },
+  "footer": "Código de esta página"
+}

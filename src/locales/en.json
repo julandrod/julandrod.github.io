@@ -1,0 +1,104 @@
+{
+  "navlinks": {
+    "about": "About Me",
+    "work": "Experience",
+    "stack": "Stack",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "mainTitle": "Hi, I'm",
+    "description": "Full Stack Developer from Colombia"
+  },
+  "aboutMe": {
+    "mainTitle": "A bit about me",
+    "subTitle": "introduccion",
+    "description": "Full Stack Developer specialized in React, Node.js, and Express, passionate about building intuitive, efficient, and high-quality web applications.\n\n I excel at learning quickly, adapting to new challenges, and turning ideas into functional solutions.\n\n I enjoy collaborating on innovative projects that create real impact.",
+    "downloadCV": "Download CV",
+    "findMe": "You can find me at:"
+  },
+  "experience": {
+    "mainTitle": "What I’ve worked on so far",
+    "subTitle": "Work Experience",
+    "cargologik": {
+      "position": "Backend Developer",
+      "description": "At Cargologik, I worked as a Backend Developer, designing and implementing scalable and secure systems using Node.js, MongoDB, and Google Cloud.\n\nI collaborated closely with product and frontend teams to develop REST APIs and cloud functions that optimized logistics processes.\n\nI was also responsible for code reviews, proposing technical improvements, resolving production issues, and maintaining best practices for security and performance.\n\nAdditionally, I actively contributed to the evolution of the architecture, always aiming for efficient and sustainable solutions."
+    },
+    "freelance": {
+      "position": "Fullstack Developer",
+      "description": "I have worked as a freelance developer, building custom web solutions for various clients, combining modern technologies with a functional and visually appealing approach.\n\nResponsibilities and Achievements:\n• Developed full web applications using React, Node.js, Express, and Tailwind CSS.\n• Created websites and landing pages using frameworks like Vite and Astro JS.\n• Configured and deployed WordPress websites.\n• Integrated databases such as MongoDB, MySQL, and PostgreSQL.\n• Participated in custom hardware projects (Arduino, Raspberry Pi).\n• Managed projects from design to final deployment."
+    },
+    "whynot": {
+      "position": "Fullstack Developer",
+      "description": "I participated in the end-to-end development of web applications, using modern technologies and a user experience–focused approach. I worked remotely with an international team, contributing to both the frontend and backend of the projects.\n\nResponsibilities and Achievements:\n• Implemented modern and responsive interfaces using Next.js and Tailwind CSS.\n• Developed REST APIs with Node.js and Express.\n• Managed data using Prisma as the ORM.\n• Maintained the full data flow between client and server.\n• Actively collaborated in agile development cycles."
+    },
+    "noCountry": {
+      "position": "Backend Developer",
+      "description": "I participated as a backend developer in a remote collaborative environment, contributing to multiple projects through the creation and documentation of APIs. The role focused on modern technologies and agile methodologies such as Scrum.\n\nResponsibilities and Achievements:\n• Developed and maintained REST APIs using Node.js and Express.js.\n• Designed relational database models with PostgreSQL and Sequelize.\n• Utilized MongoDB for non-relational data structures.\n• Managed version control and team collaboration using Git and GitHub.\n• Worked in an agile environment under Scrum methodology, with iterative deliveries and team meetings."
+    },
+    "alkemy": {
+      "position": "Fullstack Developer",
+      "description": "I participated in an intensive full-stack development project, creating a virtual wallet using modern technologies such as JavaScript, Node.js, Express, MySQL, Vite, and React. The program included technical training, agile methodologies (Scrum), and soft skills development.\n\nResponsibilities and Achievements:\n• Developed backend functionalities with Node.js, Express, and Sequelize.\n• Built the frontend using React, Redux, and Tailwind CSS.\n• Integrated a relational database with MySQL.\n• Practiced agile methodologies in a remote collaborative environment.\n• Improved communication and teamwork skills."
+    },
+    "madness": {
+      "position": "Founder & Technology Developer",
+      "description": "I founded Madness Electronics, an e-commerce store specialized in electronic components and DIY projects. I managed the design, development, and maintenance of the website using WordPress and WooCommerce, while also creating educational and functional projects with Arduino and Raspberry Pi. Additionally, I produced technical content, including tutorials and articles on electronics, programming, and embedded systems.\n\nKey Responsibilities & Achievements:\n• Designed, launched, and managed a full e-commerce platform from scratch.\n• Developed and deployed DIY and IoT projects with microcontrollers and development boards.\n• Created technical educational content, including tutorials and step-by-step guides.\n• Combined web development, hardware prototyping, and content creation to grow a tech-focused brand."
+    }
+  },
+  "tech": {
+    "title": "Languages, frameworks, and technologies",
+    "subtitle": "Tech Stack",
+    "frequently": "Technologies I use frequently:",
+    "rarelyUsed": "Technologies I know but rarely use:",
+    "learning": "Technologies I'm currently learning:"
+  },
+  "projects": {
+    "title": "Some of my work",
+    "subtitle": "Projects",
+    "description": "These are some of the projects I've worked on that showcase my skills and knowledge. Each project includes a short description, tags for the technologies used, and links to the corresponding repositories and demos.",
+    "more": "If you want to see more of my code, feel free to visit my ",
+    "iphone": {
+      "description": "Clone of the iPhone landing page, built using Vite as the framework, GSAP for modern and smooth animations, and Tailwind CSS for styling."
+    },
+    "chatbot": {
+      "description": "This chatbot uses the Gemini API, Google's artificial intelligence. Users can create an account, enter the chat, and interact with it."
+    },
+    "saludarte": {
+      "description": "Healthcare website for the company Saludarte, built using Astro.js, Tailwind CSS, and Bun as the runtime environment."
+    },
+    "lilaStore": {
+      "description": "E-commerce specialized in beauty products. Developed using WordPress and WooCommerce."
+    },
+    "shoesStore": {
+      "description": "Full Stack e-commerce platform specialized in sports shoes, allowing customers to place orders and make purchases directly from the website. It also includes an admin dashboard."
+    },
+    "autosUsados": {
+      "description": "Full Stack Marketplace for buying and selling used cars, with an internal messaging system between users."
+    },
+    "wallet": {
+      "description": "Virtual wallet built with a team of Full Stack developers as part of the emulation and skill-up program at Alkemy."
+    },
+    "barber": {
+      "description": "Platform for the complete management of a barbershop. Clients can choose a barber, book appointments, and select services. The admin can manage services, pricing, and payments to barbers."
+    },
+    "expenseTracker": {
+      "description": "Personal finance management app. Users can view statistics and get a clear summary of their income and expenses."
+    },
+    "classRoom": {
+      "description": "App to create virtual classrooms where students can watch pre-recorded lessons and interact with teachers and classmates through real-time chat."
+    }
+  },
+  "contact": {
+    "section": "Contact Me",
+    "title": "Contact",
+    "nameLabel": "Your name",
+    "namePlaceholder": "What is your name?",
+    "emailLabel": "Your email",
+    "emailPlaceholder": "What is your email?",
+    "messageLabel": "Your message",
+    "messagePlaceholder": "What would you like to tell me?",
+    "sendButton": "Send",
+    "sending": "Sending..."
+  },
+  "footer": "Page source code"
+}

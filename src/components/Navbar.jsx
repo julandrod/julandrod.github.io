@@ -3,11 +3,16 @@ import { styles } from "../styles";
 import { Link } from "react-router-dom";
 import { logo, menu, close } from "../assets";
 import { navLinks } from "../constants";
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const { i18n, t } = useTranslation();
+  const currentLang = i18n.language;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,18 +38,43 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Julian Rodriguez
-          </p>
-        </Link>
+        <div className="flex">
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <p className="text-white text-[18px] font-bold cursor-pointer flex">
+              Julian Rodriguez
+            </p>
+          </Link>
+          <div className="flex px-5 items-center">
+            <button
+              onClick={() => i18n.changeLanguage("es")}
+              className={`${
+                currentLang === "es"
+                  ? "bg-white rounded-md text-black pl-1 pr-1"
+                  : "none pl-1 pr-1"
+              }`}
+            >
+              ES 🇨🇴
+            </button>
+            <span className="pr-2 pl-2">|</span>
+            <button
+              onClick={() => i18n.changeLanguage("en")}
+              className={`${
+                currentLang === "en"
+                  ? "bg-white rounded-md text-black pl-1 pr-1"
+                  : "none pl-1 pr-1"
+              }`}
+            >
+              EN 🇺🇲
+            </button>
+          </div>
+        </div>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
@@ -54,7 +84,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}>{t(nav.title)}</a>
             </li>
           ))}
         </ul>
@@ -82,7 +112,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`}>{t(nav.title)}</a>
                 </li>
               ))}
             </ul>

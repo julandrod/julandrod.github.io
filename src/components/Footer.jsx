@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { git, gmail } from "../assets";
 import { socials } from "../constants";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-black-100 flex flex-col sm:flex-row justify-evenly">
       <div className="flex flex-1 justify-center px-10 py-6">
@@ -12,7 +15,7 @@ const Footer = () => {
           className="flex justify-center items-center "
         >
           <img src={git} alt="this-page-code" className="w-8 h-8" />
-          <span className="pl-2 font-bold">Codigo de esta pagina</span>
+          <span className="pl-2 font-bold">{t("footer")}</span>
         </a>
       </div>
       <div className="flex flex-1 px-10 py-6 justify-center items-center">

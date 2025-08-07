@@ -42,28 +42,29 @@ import {
   prisma,
   chatbotGemini,
   iPhoneLanding,
+  cargologik,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "Sobre mi",
+    title: "navlinks.about",
   },
   {
     id: "work",
-    title: "Experiencia",
+    title: "navlinks.work",
   },
   {
     id: "stack",
-    title: "Tecnologias",
+    title: "navlinks.stack",
   },
   {
     id: "projects",
-    title: "Proyectos",
+    title: "navlinks.projects",
   },
   {
     id: "contact",
-    title: "Contacto",
+    title: "navlinks.contact",
   },
 ];
 
@@ -196,14 +197,12 @@ const learningStack = [
 
 const experiences = [
   {
-    title: "Full Stack Developer",
-    company_name: "Whynot? mih",
-    icon: whynot,
+    title: "experience.cargologik.position",
+    company_name: "Cargologik",
+    icon: cargologik,
     iconBg: "#E6DEDD",
-    date: "Diciembre 2023 - Febrero 2024",
-    points: [
-      "Desarrollador Full Stack de aplicaciones web utilizando tecnologías como NextJs, Tailwind,  Nodejs, Express y Prisma.",
-    ],
+    date: { start: "2024-08", end: "2025-08" },
+    points: ["experience.cargologik.description"],
     tags: [
       {
         name: "Next.js",
@@ -232,16 +231,12 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer",
+    title: "experience.freelance.position",
     company_name: "Freelance",
     icon: freelance,
     iconBg: "#E6DEDD",
-    date: "Abril 2022 - Actualidad",
-    points: [
-      "Desarrollo de aplicaciones web full stack usando tecnologías como React, Tailwind, Nodejs, Express y bases de datos como PostgreSQL, MySQL y MongoDB.",
-      "Creación de sitios web y landing page usando tecnologías como Vite y Astro Js.",
-      "Configuración y puesta en marcha de sitios con Wordpress.",
-    ],
+    date: { start: "2022-04", end: "2024-08" },
+    points: ["experience.freelance.description"],
     tags: [
       {
         name: "React",
@@ -277,19 +272,59 @@ const experiences = [
       },
       {
         name: "mysql",
-        color: "green-text-gradient",
+        color: "text-slate-500",
+      },
+      {
+        name: "arduino",
+        color: "text-green-500",
+      },
+      {
+        name: "raspberry",
+        color: "text-purple-500",
       },
     ],
   },
   {
-    title: "Backend Developer",
+    title: "experience.whynot.position",
+    company_name: "Whynot? mih",
+    icon: whynot,
+    iconBg: "#E6DEDD",
+    date: { start: "2023-12", end: "2024-02" },
+    points: ["experience.whynot.description"],
+    tags: [
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "",
+      },
+      {
+        name: "prisma",
+        color: "text-red-900",
+      },
+      {
+        name: "postgresql",
+        color: "",
+      },
+    ],
+  },
+  {
+    title: "experience.noCountry.position",
     company_name: "No Country",
     icon: nocountry,
     iconBg: "#E6DEDD",
-    date: "Febrero 2023 - Mayo 2023",
-    points: [
-      "Desarrollador Backend realizando Api's para diferentes proyectos usando tecnologías como Nodejs, Express, Sequelize y PostgreSQL.",
-    ],
+    date: { start: "2023-02", end: "2023-05" },
+    points: ["experience.noCountry.description"],
     tags: [
       {
         name: "nodejs",
@@ -305,20 +340,21 @@ const experiences = [
       },
       {
         name: "postgresql",
-        color: "text-yellow-900",
+        color: "text-yellow-700",
+      },
+      {
+        name: "mongo",
+        color: "text-red-700",
       },
     ],
   },
   {
-    title: "Full Stack Developer",
+    title: "experience.alkemy.position",
     company_name: "Alkemy",
     icon: alkemy,
     iconBg: "#E6DEDD",
-    date: "Noviembre 2022",
-    points: [
-      "Skill Up de Fullstack JS junto con el Skill Up de Metodologías de trabajo y de Soft Skills en Alkemy.",
-      "Desarrollo de una billetera virtual usando tecnologias como Javascript, NodeJs, Express, MySql, Vite",
-    ],
+    date: { start: "2022-11", end: "2022-12" },
+    points: ["experience.alkemy.description"],
     tags: [
       {
         name: "React",
@@ -346,19 +382,13 @@ const experiences = [
       },
     ],
   },
-
   {
-    title: "Fundador, Ingeniero",
+    title: "experience.madness.position",
     company_name: "Madness Electronics",
     icon: madness,
     iconBg: "#E6DEDD",
-    date: "Noviembre 2012 - Agosto 2020",
-    points: [
-      "Creador de la tienda en línea Madness Electronics especializada en componentes electrónicos..",
-      "Diseñar, administrar y mantener el sitio web, utilizando WordPress y WooCommerce.",
-      "Creación de proyectos basados en Arduino y Raspberry Pi.",
-      "Elaboración de artículos y tutoriales sobre tecnología, electrónica y sistemas embebidos.",
-    ],
+    date: { start: "2012-11", end: "2020-08" },
+    points: ["experience.madness.description"],
     tags: [
       {
         name: "wordpress",
@@ -366,11 +396,31 @@ const experiences = [
       },
       {
         name: "arduino",
-        color: "pink-text-gradient",
+        color: "text-green-500",
       },
       {
         name: "raspberrypi",
-        color: "",
+        color: "text-purple-500",
+      },
+      {
+        name: "IoT",
+        color: "text-red-400",
+      },
+      {
+        name: "DIY",
+        color: "text-yellow-600",
+      },
+      {
+        name: "hardware",
+        color: "text-blue-200",
+      },
+      {
+        name: "C++",
+        color: "text-yellow-200",
+      },
+      {
+        name: "microcontrollers",
+        color: "text-white",
       },
     ],
   },
@@ -379,8 +429,7 @@ const experiences = [
 const projects = [
   {
     name: "IPhone Landing Page - Clon",
-    description:
-      "Clon de la landing page de iPhone utilizando Vite como framework, GSAP para animaciones modernas y fluidas y por último Tailwind para agregar estilos.",
+    description: "projects.iphone.description",
     tags: [
       {
         name: "vite",
@@ -401,8 +450,7 @@ const projects = [
   },
   {
     name: "Chatbot - Gemini",
-    description:
-      "Este chatbot utiliza la API de Gemini la inteligencia artificial de Google. Los usuarios pueden crear una cuenta, ingresar al chat e interactuar con este.",
+    description: "projects.chatbot.description",
     tags: [
       {
         name: "nodejs",
@@ -439,8 +487,7 @@ const projects = [
   },
   {
     name: "Saludarte",
-    description:
-      "Sitio web de salud para la empresa Saludarte, construida usando Astro Js, Tailwind y Bun como runtime.",
+    description: "projects.saludarte.description",
     tags: [
       {
         name: "astrojs",
@@ -460,8 +507,7 @@ const projects = [
   },
   {
     name: "Lila Store",
-    description:
-      "E-commerce especializado en la venta de productos de belleza. Desarrollado usando Wordpress y Woocommerce.",
+    description: "projects.lilaStore.description",
     tags: [
       {
         name: "Wordpress",
@@ -477,8 +523,7 @@ const projects = [
   },
   {
     name: "Shoes Store",
-    description:
-      "Plataforma Full Stack de un e-commerce especializado en zapatos deportivos que permite al cliente comprar y hacer sus pedidos directamente desde la pagina, cuenta ademas con Dashboard para el administrador.",
+    description: "projects.shoesStore.description",
     tags: [
       {
         name: "nodejs",
@@ -510,8 +555,7 @@ const projects = [
   },
   {
     name: "Autos Usados",
-    description:
-      "Marketplace Full Stack, permite a los usuarios vender y comprar autos usados, los usuarios pueden contactarse a traves de mensajes en la misma plataforma.",
+    description: "projects.autosUsados.description",
     tags: [
       {
         name: "nodejs",
@@ -543,8 +587,7 @@ const projects = [
   },
   {
     name: "Virtual Wallet",
-    description:
-      "Billetera virtual realizada con un equipo de desarrolladores Full Stack como parte del proceso de emulacion y skill up en Alkemy.",
+    description: "projects.wallet.description",
     tags: [
       {
         name: "nodejs",
@@ -576,8 +619,7 @@ const projects = [
   },
   {
     name: "The Boss Barber Shop",
-    description:
-      "Plataforma para la gestion completa de una barberia, permite elegir un barbero para asignar un turno y los servicios requeridos, ademas el administrador puede gsetionar todos los servicios ofrecidos, precios y pagos a los barberos. ",
+    description: "projects.barber.description",
     tags: [
       {
         name: "nodejs",
@@ -609,8 +651,7 @@ const projects = [
   },
   {
     name: "Expense Tracker",
-    description:
-      "Aplicacion para la gestion de gastos personales, el usuario puede ver estadisticas y un resumen sobre sus ingresos y gastos personales.",
+    description: "projects.expenseTracker.description",
     tags: [
       {
         name: "nodejs",
@@ -639,8 +680,7 @@ const projects = [
   },
   {
     name: "ClassRoom",
-    description:
-      "Esta aplicacion permite crear un salon virtual de clases donde los alumnos pueden ver clases previamente grabadas e interactuar entre alumnos y profesores por un chat en tiempo real.",
+    description: "projects.classRoom.description",
     tags: [
       {
         name: "nodejs",
